@@ -1,0 +1,30 @@
+/* Footer link hover effect */
+.footer-link {
+    transition: all 0.3s ease-in-out;
+    color: #f8f9fa; /* Default color */
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: #007bff; /* Change to blue on hover */
+    text-decoration: underline; /* Add underline */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Icon hover effect */
+.footer-link svg {
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer-link:hover svg {
+    transform: scale(1.2); /* Slightly enlarge the icon */
+}
+
+/* Center "Find Me" icons */
+.find-me-icons {
+    display: flex;
+    justify-content: center; /* Center the icons horizontally */
+    gap: 0.1rem; /* Minimize spacing between the icons */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}

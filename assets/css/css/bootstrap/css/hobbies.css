@@ -1,0 +1,54 @@
+/* Ensure images are responsive and visually appealing */
+
+.hobby-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  border: 2px solid #ddd;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Add hover effect for images */
+
+.hobby-image:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Add spacing between carousel items */
+
+.carousel-item img {
+  padding: 10px;
+}
+
+/* Ensure carousel controls are visually aligned */
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  filter: invert(1);
+}
+
+/* Add spacing between hobby sections */
+
+.hobby-section {
+  margin-bottom: 2rem;
+}
+
+/* Center text below images */
+
+.hobby-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  color: #333;
+}
+
+.hobby-description {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
+

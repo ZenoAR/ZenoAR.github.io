@@ -1,0 +1,48 @@
+/* Ensure images are responsive and visually appealing */
+.hobby-image {
+    width: 200px; /* Set a fixed width for consistency */
+    height: 200px; /* Set a fixed height for consistency */
+    object-fit: cover; /* Ensure the image scales properly within the fixed dimensions */
+    margin: 0 auto; /* Center the images */
+    border-radius: 50%; /* Ensure images are circular */
+    background-color: #f0f0f0; /* Light gray background for a clean look */
+    border: 2px solid #ddd; /* Subtle border for better visibility */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Add smooth hover effects */
+}
+
+/* Add hover effect for images */
+.hobby-image:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Add a stronger shadow on hover */
+}
+
+/* Add spacing between carousel items */
+.carousel-item img {
+    padding: 10px; /* Add padding around images */
+}
+
+/* Ensure carousel controls are visually aligned */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1); /* Make controls visible on dark images */
+}
+
+/* Add spacing between hobby sections */
+.hobby-section {
+    margin-bottom: 2rem; /* Add spacing between rows of hobbies */
+}
+
+/* Center text below images */
+.hobby-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    color: #333; /* Darker text for better readability */
+}
+
+.hobby-description {
+    font-size: 1rem;
+    color: #555; /* Subtle text color for descriptions */
+    margin-top: 0.5rem;
+}

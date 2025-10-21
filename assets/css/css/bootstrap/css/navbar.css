@@ -1,0 +1,55 @@
+/* Styling for nav links */
+
+.navbar-nav .nav-link {
+  color: #000;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: blue;
+}
+
+/* Box styling for collapsed view */
+
+.navbar-nav .box-link {
+  background-color: black;
+  color: #fff;
+  padding: 5px 10px;
+  margin: 2px 0;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  width: fit-content;
+  margin-left: auto;
+}
+
+.navbar-nav .box-link:hover {
+  background-color: blue;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+/* Remove box styling for larger screens */
+
+@media (min-width: 768px) {
+  .navbar-nav .box-link {
+    background-color: transparent;
+    color: inherit;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    width: auto;
+    margin-left: 0;
+    transform: none;
+    transition: color 0.3s ease;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-nav .box-link:hover {
+    background-color: transparent;
+    color: #007bff;
+    transform: none;
+  }
+}
+
